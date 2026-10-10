@@ -1,0 +1,11 @@
+def get_sum(numbers):
+    sum_list = 0
+    for i in numbers:
+        sum_list += int(i)
+    return sum_list
+    # Complete this recursive function
+
+numbers = input().split()
+
+sum_of_numbers = get_sum(numbers) # Call the get_sum function
+print(sum_of_numbers)
