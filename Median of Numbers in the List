@@ -1,0 +1,12 @@
+string = input().split(",")
+new_list = []
+for char in string:
+    value = int(char)
+    new_list += [value]
+sorting = sorted(new_list)
+lenght = len(sorting)
+if lenght % 2 == 1:
+    median = sorting[lenght // 2]
+else:
+    median = (sorting[lenght // 2 - 1] + sorting[lenght // 2]) / 2 
+print(median)
