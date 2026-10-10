@@ -1,0 +1,11 @@
+def get_digit(list_a):
+    digit = []
+    for char in list_a:
+        if char.isdigit():
+            digit += [int(char)]
+    return digit
+list_a = input()
+digit_list = get_digit(list_a)
+print(sum(digit_list))
+print(min(digit_list))
+print(max(digit_list))
