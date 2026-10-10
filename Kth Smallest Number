@@ -1,0 +1,8 @@
+string = input().split(",")
+index = int(input())
+list_a = []
+for char in string:
+    value = int(char)
+    list_a += [value]
+sorting = sorted(list_a)
+print(sorting[index-1])
