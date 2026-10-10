@@ -1,0 +1,6 @@
+string = input().split(",")
+new_str = []
+lenght = len(string)
+for i in string:
+    val = int(i)
+    
