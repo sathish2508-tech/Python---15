@@ -1,0 +1,8 @@
+string = input().split(",")
+index = int(input())
+new_string = []
+for char in string:
+    value = int(char)
+    new_string += [value]
+start_index = new_string[index:]
+print(min(start_index))
