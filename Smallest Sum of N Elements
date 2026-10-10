@@ -1,0 +1,9 @@
+string = input().split(",")
+index = int(input())
+new_string = []
+for char in string:
+    val = int(char)
+    new_string += [val]
+sorting = sorted(new_string)
+start_from = sorting[:index]
+print(sum(start_from))
