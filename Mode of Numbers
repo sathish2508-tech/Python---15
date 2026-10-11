@@ -1,0 +1,15 @@
+def find_mode(numbers):
+    nums = []
+    for n in numbers:
+        nums.append(int(n))
+    max_freq = 0
+    mode = None 
+    for num in nums:
+        count = nums.count(num)
+        if count > max_freq:
+            max_freq = count
+            mode = num
+    return mode
+numbers = input().split(',')
+result = find_mode(numbers)
+print(result)
