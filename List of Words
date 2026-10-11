@@ -1,0 +1,7 @@
+S = input().split()
+new_s = []
+for char in S:
+    if char[0] == 'a':
+        continue
+    new_s += [char]
+print(new_s)
