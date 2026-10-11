@@ -1,0 +1,16 @@
+def digits(num_list):
+    int_con = []
+    for val in num_list:
+        if val.isdigit():
+            int_con.append(val)
+    return int_con
+def convert_int(digit_val):
+    new_list = []
+    for i in digit_val:
+        val = int(i)
+        new_list.append(val)
+    return new_list
+num_list = input().split(",")
+digit_val = digits(num_list)
+str_int = convert_int(digit_val)
+print(str_int)
