@@ -1,0 +1,12 @@
+def get_series_sum(number):
+    if number == 1:
+        return 1 
+    else:
+        return 1/number + get_series_sum(number-1)
+    # Complete this recursive function
+number = int(input())
+
+series_sum = get_series_sum(number) # Call the get_series_sum function
+
+print(round(series_sum,2))
+
