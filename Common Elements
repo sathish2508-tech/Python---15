@@ -1,0 +1,16 @@
+def convert_string_to_int(num_list):
+    new_list = []
+    for item in num_list:
+        val = int(item)
+        new_list.append(val)
+    return new_list
+list_a = input().split(",")
+list_b = input().split(",")
+def_a = convert_string_to_int(list_a)
+def_b = convert_string_to_int(list_b)
+set_a = set(def_a)
+set_b = set(def_b)
+result = set_a&set_b
+list_val = list(result)
+list_val.sort()
+print(list_val)
