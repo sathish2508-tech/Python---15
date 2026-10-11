@@ -1,0 +1,12 @@
+string = input().split()
+is_even = []
+is_odd = []
+for i in string:
+    if int(i) % 2 == 0:
+        is_even += [int(i)]
+    else:
+        is_odd += [int(i)]
+is_even.sort()
+is_odd.sort()
+print(is_even)
+print(is_odd)
