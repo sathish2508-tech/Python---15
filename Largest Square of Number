@@ -1,0 +1,16 @@
+def get_sqr_val(x):
+    return x * x 
+def get_largest_square(numbers):
+    largest = 0 
+    for i in numbers:
+        sq = get_sqr_val(int(i))
+        if sq > largest:
+            largest = sq 
+    return largest
+    # Complete this function
+
+
+numbers = input().split()
+
+result = get_largest_square(numbers) # call the get_largest_square function
+print(result) 
