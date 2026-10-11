@@ -1,0 +1,14 @@
+n = int(input())
+multiple_of_2 = set()
+multiple_of_3 = set()
+for i in range(1, n+1):
+    multiple_of_2.add(2 * i) 
+    multiple_of_3.add(3 * i)
+delay_common_val = multiple_of_2 - multiple_of_3
+new_list = list(delay_common_val)
+new_list.sort()
+print(new_list)
+symatric_diff = multiple_of_2 ^ multiple_of_3
+another_list = list(symatric_diff)
+another_list.sort()
+print(another_list)
