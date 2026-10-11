@@ -1,0 +1,6 @@
+list_a = [5, 4, 10, 2, 3, 2, 5, 15, 4, 4]
+N = int(input())
+lenght = len(list_a)
+for i in range(lenght):
+    if list_a[i] == N:
+        print(i, end = " ")
