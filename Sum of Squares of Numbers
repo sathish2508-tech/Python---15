@@ -1,0 +1,13 @@
+def get_sqr_val(x):
+    return x * x
+def get_sum_of_squares(numbers):
+    sqrd_sum = 0
+    for i in numbers:
+        sqrd_sum += get_sqr_val(int(i))
+    return sqrd_sum
+    # Complete this function by calling get_sum_of_squares function
+    
+numbers = input().split()
+
+squares_sum = get_sum_of_squares(numbers) # Call the get_sum_of_squares function
+print(squares_sum)
