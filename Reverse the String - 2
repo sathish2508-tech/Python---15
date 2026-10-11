@@ -1,0 +1,11 @@
+def get_reversed_string(string):
+    if (len(string) == 0) or (len(string) == 1):
+        return string
+    else:
+        return string[len(string)-1] + get_reversed_string(string[:len(string)-1])
+    # Complete this recursive function
+
+string = input()
+
+resultant_string = get_reversed_string(string) # Call the get_reversed_string function
+print(resultant_string)
