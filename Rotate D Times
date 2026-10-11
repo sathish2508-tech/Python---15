@@ -1,0 +1,14 @@
+def convert_str_to_int(list_num):
+    num_list = []
+    for item in list_num:
+        integer = int(item)
+        num_list.append(integer)
+    return num_list
+list_num = input().split(",")
+repeat = int(input())
+int_list = convert_str_to_int(list_num)
+count_rep = repeat % len(list_num)
+num_1 = int_list[0:count_rep]
+num_2 = int_list[count_rep:]
+num_2.extend(num_1)
+print(num_2)
