@@ -1,0 +1,18 @@
+def convert_str_to_int(list_num):
+    num_list = []
+    for i in list_num:
+        integer = int(i)
+        num_list.append(integer)
+    return num_list
+list_a = input().split()
+list_b = input().split()
+list_c = input().split()
+int_list_a = convert_str_to_int(list_a)
+int_list_b = convert_str_to_int(list_b)
+int_list_c = convert_str_to_int(list_c)
+set_a = set(int_list_a)
+set_b = set(int_list_b)
+set_c = set(int_list_c)
+interset = set_a & set_b & set_c
+common_val = list(interset)
+print(common_val)
