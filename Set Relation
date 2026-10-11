@@ -1,0 +1,17 @@
+def convert_to_int(input_set):
+    num_list = []
+    for item in input_set:
+        integer = int(item)
+        num_list.append(integer)
+    return num_list
+num_set = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+# Write your code here
+input_set = input().split()
+set_vals = convert_to_int(input_set)
+set_container = set(set_vals)
+if num_set.issubset(set_container):
+    print('Subset')
+elif num_set.issuperset(set_container):
+    print('Superset')
+elif num_set.isdisjoint(set_container):
+    print('Disjoint Set')
