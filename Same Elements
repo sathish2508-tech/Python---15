@@ -1,0 +1,15 @@
+def convert_to_int(num_list):
+    new_list = []
+    for item in num_list:
+        val = int(item)
+        new_list.append(val)
+    return new_list
+num_list = input().split()
+int_list = convert_to_int(num_list)
+set_list = set(int_list)
+if len(set_list) == 1:
+    print("True")
+else:
+    is_list = list(set_list)
+    is_list.sort()
+    print(is_list)
