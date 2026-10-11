@@ -1,0 +1,24 @@
+def convert_str_to_int(num_list):
+    new_list = []
+    for item in num_list:
+        integer = int(item)
+        new_list.append(integer)
+    return new_list
+def unique_val_sets(int_list, number):
+    lenght = len(int_list) - 1 
+    unique_set = set()
+    for index in range(lenght):
+        num_1 = int_list[index]
+        num_2 = number - num_1
+        remaining = int_list[index:]
+        if num_2 in remaining:
+            pair = (num_1, num_2)
+            is_tuple = tuple(sorted(pair))
+            unique_set.add(is_tuple)
+    return unique_set
+num_list = input().split(',')
+number = int(input())
+int_list = convert_str_to_int(num_list)
+unique_set = unique_val_sets(int_list, number)
+for vals in sorted(unique_set):
+    print(vals)
