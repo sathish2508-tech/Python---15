@@ -1,0 +1,15 @@
+def convert_str_int(list_num):
+    new_list = []
+    for item in list_num:
+        integer = int(item)
+        new_list.append(integer)
+    return new_list
+list_num = input().split()
+list_val = convert_str_int(list_num)
+set_val = set(list_val)
+max_val = max(list_val)
+full_num = set(range(1,max_val+1))
+remaining = full_num.difference(set_val)
+missing_val = list(remaining)
+missing_val.sort()
+print(missing_val)
