@@ -1,0 +1,6 @@
+programming_languages = ['Python', 'C', 'Java', 'Ruby', 'C++', 'CSS', 'HTML', 'Bash', 'Perl', 'R', 'Swift', 'SQL', 'PHP', 'JavaScript']
+v = int(input())
+for i in range(v):
+    if programming_languages:
+        programming_languages.pop()
+print(programming_languages)
