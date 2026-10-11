@@ -1,0 +1,5 @@
+sports_list = ['Cricket', 'Hockey', 'Football', 'Badminton']
+new_list = [input()]
+sports_list.extend(new_list)
+print(sports_list)
+# Write your code here
