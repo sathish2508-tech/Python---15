@@ -1,0 +1,7 @@
+N = int(input())
+all_str = []
+for i in range(N):
+    lines = input().split()
+    all_str.extend(lines)
+all_str.sort()
+print(all_str)
