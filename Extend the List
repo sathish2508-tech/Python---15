@@ -1,0 +1,4 @@
+L = ["5", "7", "Rohit", "Virat", "Dhoni"]
+s = input().split()
+L.extend(s)
+print(L)
