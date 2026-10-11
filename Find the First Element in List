@@ -1,0 +1,16 @@
+def get_index(numbers_list, number):
+    if not numbers list:
+        return -1
+    if int(numbers_list[0]) == number:
+        return 0
+    index_num = get_index(numbers_list[1:], number)
+    if index_num == -1:
+        return -1
+    else:
+        return index_num + 1
+   # Complete this recursive function
+numbers_list = input().split()
+number = int(input())
+number_index = get_index(numbers_list, number) # Call the get_index function
+
+print(number index)
