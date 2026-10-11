@@ -1,0 +1,8 @@
+S = input().split()
+odd_nums = []
+for i in S:
+    nums = int(i)
+    if S.count(i) % 2 != 0 and nums not in odd_nums:
+        odd_nums.append(nums)
+odd_nums.sort()
+print(odd_nums)
