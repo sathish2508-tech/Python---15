@@ -1,0 +1,8 @@
+a = input().split()
+rep = set(a)
+list_a = []
+for item in rep:
+    val = int(item)
+    list_a += [val]
+list_a.sort()
+print(list_a)
